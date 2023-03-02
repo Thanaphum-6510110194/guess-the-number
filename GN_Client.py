@@ -30,3 +30,5 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         elif "You lose!" in data.decode():
             print("Sorry, you lost. Too many guesses.")
             break
+        
+print("Thanks for playing!")
