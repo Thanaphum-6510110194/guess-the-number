@@ -13,4 +13,7 @@ def get_guess():
         
         except ValueError as E:
            print(str(E))
-           
+
+with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+    s.connect((HOST, PORT))
+    print("Guess the number between 1 and 100!")
